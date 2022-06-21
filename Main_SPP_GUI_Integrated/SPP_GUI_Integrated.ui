@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>625</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget_Predict_And_BatchGene">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>601</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_Prection">
+     <attribute name="title">
+      <string>Stock Prections</string>
+     </attribute>
+     <widget class="QComboBox" name="CompaniesComboBox_SP">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>60</y>
+        <width>151</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LBCompaniesComboBox_SP">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>141</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Company  model</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PBtn_SelectBatch_SP">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>60</y>
+        <width>101</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Select Batch</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LEdit_SelectBatch_SP">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>60</y>
+        <width>211</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PbtnStart_SP">
+      <property name="geometry">
+       <rect>
+        <x>428</x>
+        <y>145</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start process</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PbtnCleanall_SP">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>145</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clean all</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Ledit_NDaysPredict">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>150</y>
+        <width>113</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>330</y>
+        <width>501</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>310</y>
+        <width>241</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ready </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Lb_NdayPredict">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>130</y>
+        <width>121</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>N days to predict</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Lb_BatchPath_SP">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>40</y>
+        <width>131</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Batch Path</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Tab_BatchGene">
+     <attribute name="title">
+      <string>Batch Generator</string>
+     </attribute>
+     <widget class="QDateEdit" name="DateEdit_From">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>70</y>
+        <width>110</width>
+        <height>26</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="DateEdit_To">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>70</y>
+        <width>110</width>
+        <height>26</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_BatchGene">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>330</y>
+        <width>501</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LB_From">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>50</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Date From</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LB_To">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Date To</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LEdit_BackDays">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>101</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Pbtn_Start">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>240</y>
+        <width>111</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Pbtn_CleanAll">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>240</y>
+        <width>111</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clean all</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PBtn_SaveIn">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>160</y>
+        <width>89</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save in</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LB_BackDays">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Back days to consider</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LB_StateProcessBar">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>300</y>
+        <width>241</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ready</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LEdi_PathToSaveBatch">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>160</y>
+        <width>201</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Lb_PathToSaveBatch">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>130</y>
+        <width>191</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>It's going to be save in...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Lb_CompaniesComboBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Company</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="CompaniesComboBox_BG">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>625</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
